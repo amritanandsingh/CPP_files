@@ -1,0 +1,31 @@
+//
+//  main.cpp
+//  POW(X,n)
+//
+//  Created by Amrit Anand Singh on 18/01/22.
+//
+
+#include <iostream>
+using namespace std;
+
+void fast_pow(int a,int n)
+{
+    int ans=1;
+    while(n>0)
+    {
+        if((n&1)==1)
+        {
+            ans*=a;
+            
+        }
+        a*=a;
+        n=n>>1;
+    }
+   
+    
+}
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    fast_pow(2,10);
+    return 0;
+}
